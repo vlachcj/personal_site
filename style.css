@@ -1,0 +1,35 @@
+.header {
+	height: 250px;
+}
+#name {
+	float: left;
+	padding-left: 20px;
+}
+#contact {
+	float: right;
+	margin-top: 100px;
+	margin-right: 10px;
+}
+address {
+	 text-align: right;
+	 line-height: 30px;
+	 padding-right: 10px;
+}
+#social_links {
+	width: 160px;
+	height: 40px;
+}
+.social_icon {
+	width: 20%;
+	margin: 2px;
+}
+#bio {
+padding-left: 20px;	
+}
+#resume {
+	display: inline-block;
+	padding-left: 100px;
+}
+#desc {
+	width: 50%;
+}
