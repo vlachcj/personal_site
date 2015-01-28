@@ -3,11 +3,14 @@
 body {
 	background-color: #2b0109;
 }
+h1 {
+	color: #b8af03;
+}
 a, a:hover, a:focus {
-	color: #83af9b;
+	color: #fa2a00;
 }
 hr {
-    border-top: 1px solid #83af9b;
+    border-top: 1px solid #b8af03;
 }
 
 /* HEADER */
@@ -18,6 +21,7 @@ hr {
 #name {
 	float: left;
 	padding-left: 20px;
+	color: #83af9b;
 }
 #contact {
 	float: right;
@@ -28,6 +32,10 @@ address {
 	 text-align: right;
 	 line-height: 30px;
 	 padding-right: 10px;
+}
+._cell {
+	color: #83af9b;
+	font-weight: bold;
 }
 #social_links {
 	width: 160px;
@@ -47,7 +55,7 @@ address {
     background-color: #fa2a00;
 }
 #resume {
-	color: #83af9b;
+	color: #fa2a00;
 }
 #resume:hover, #resume:focus {
 	background-color: #2b0109;
@@ -127,7 +135,7 @@ address {
 .edu_block .date, .edu_block .gpa, .job .date {
 	float: right;
 }
-.edu_block .location, .edu_block .degree, .edu_block .date, .job .location, .job .job_title {
+.edu_block .location, .edu_block .degree, .job .location, .job .job_title {
 	font-style: italic;
 }
 .edu_block *, .job * {
@@ -138,9 +146,7 @@ address {
 .job .job_desc {
 	margin-left: 20px;
 }
-._gpa {
-	color: #b8af03;
-}
-._contact {
-	color: #b8af03;
+._gpa, ._contact {
+	color: #83af9b;
+	font-weight: bold;
 }
