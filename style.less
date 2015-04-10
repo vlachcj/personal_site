@@ -37,7 +37,7 @@ h1 {
 	margin: 10px;
 }
 a, a:hover, a:focus {
-	color: #nameColor;
+	color: @nameColor;
 }
 hr {
     border-top: 1px solid @activeColor;
@@ -79,10 +79,10 @@ hr {
 	padding-right: 0px;
 	text-align: center;
 }
-._col a {
+a ._col {
     color: @textColor;
 }
-._col a:hover, ._col a:focus {
+a ._col:hover, a ._col:focus {
     color: @textColor;
 	text-decoration: none;
 }
@@ -92,7 +92,7 @@ hr {
 ._col.active {
     background-color: @activeColor;
 }
-#resume a {
+a #resume {
 	color: @nameColor;
 }
 #resume:hover, #resume:focus {
