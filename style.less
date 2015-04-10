@@ -1,0 +1,237 @@
+/*
+dark yellow: f2c22d
+light yellow: fff599
+dark coral: ff4d4d
+light coral: ffc3bf
+dark teal: 25b998
+light teal: c6f0dd
+charcoal: 2f3237
+*/
+
+/* background (off white) */
+@backColor: #FAFBFB;
+
+/* primary text (charcoal) */
+@textColor: #2f3237;
+
+/* large name (dark coral) */
+@nameColor: #ff4d4d;
+
+/* subtitle (dark teal) */
+@supportColor1: #25b998;
+
+/* nav hover (light yellow) */
+@hoverColor: #fff599;
+
+/* nav active (dark yellow) */
+@activeColor: #f2c22d;
+
+/* GENERAL */
+
+body {
+	background-color: @backColor;
+	color: @textColor;
+}
+h1 {
+	color: @nameColor;
+	margin: 10px;
+}
+a, a:hover, a:focus {
+	color: #nameColor;
+}
+hr {
+    border-top: 1px solid @activeColor;
+    margin-top: 5px;
+}
+
+/* HEADER */
+
+.header {
+	height: 400px;
+	padding-top: 20px;
+}
+.header a:hover, .header a:focus {
+	text-decoration: none;
+}
+#header_image {
+	height: 180px;
+}
+#name {
+	text-align: center;
+	color: @supportColor1;
+}
+#social_links {
+	width: 160px;
+	height: 40px;
+	margin: auto;
+}
+.social_icon {
+	width: 20%;
+	margin: 2px;
+}
+
+/* MENU */
+
+._col {
+  	padding-bottom: 10px;
+  	padding-top: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
+	text-align: center;
+}
+._col a {
+    color: @textColor;
+}
+._col a:hover, ._col a:focus {
+    color: @textColor;
+	text-decoration: none;
+}
+._col:hover, ._col:focus {
+    background-color: @hoverColor;
+}
+._col.active {
+    background-color: @activeColor;
+}
+#resume a {
+	color: @nameColor;
+}
+#resume:hover, #resume:focus {
+	background-color: @backColor;
+}
+#arrow {
+	font-size: 8px;
+}
+#nav_break {
+	width: 98%;
+}
+
+/* CONTENT BOXES */
+
+.tab-pane {
+	width: 60%;
+	margin: auto;
+	padding-bottom: 50px;
+}
+.pad {
+	height: 30px;
+	display: inline-block;
+}
+
+/* ABOUT, ULTIMATE */
+
+.img-wrapper {
+	display: inline-block;
+	float: left;
+	width: 30%;
+}
+#me, #ult {
+	width: 100%;
+}
+.desc {
+	display: inline-block;
+	float: left;
+	padding-left: 5%;
+	width: 70%;
+}
+
+/* EDUCATION, EMPLOYMENT */
+
+.edu {
+	display: inline-block;
+	width: 100%;
+}
+.edu_seal {
+	width: 10%;
+	float: left;
+	clear: left;
+}
+.edu_seal img {
+	height: 60px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.edu_block {
+	width: 90%;
+	padding-left: 2%;
+}
+.edu_block, .job {
+	margin-bottom: 20px;
+	float: left;
+}
+.edu_block span, .job span {
+	display: inline-block;
+}
+.edu_block .school, .job .company {
+	font-size: 16px;
+	font-weight: bold;
+	color: @supportColor1;
+}
+.edu_block .date, .edu_block .gpa, .job .date {
+	float: right;
+}
+.edu_block .location, .edu_block .degree, .job .location, .job .job_title {
+	font-style: italic;
+}
+.edu_block *, .job * {
+	font-size: 14px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+.job .job_desc {
+	margin-left: 20px;
+}
+._gpa, ._contact {
+	color: @nameColor;
+	font-weight: bold;
+}
+
+/* PITCH */
+
+#_elevator_pitch {
+	color: @supportColor1;
+}
+
+/* CONTACT */
+
+#contact_wrapper {
+	display: inline-block;
+	width: 100%;
+}
+.contact_mode {
+	display: block;
+	float: left;
+	width: 33%;
+	text-align: center;
+}
+.contact_mode a {
+	color: @nameColor;
+}
+._contact_mode {
+	color: @supportColor1;
+}
+._cell {
+	color: @nameColor;
+	font-weight: bold;
+}
+
+/* FOOTER */
+
+#footer {
+	margin-top: 30px;
+	margin-bottom: 15px;
+	height: 30px;
+}
+#footer_content {
+	float: right;
+	display: inline-block;
+	margin-right: 10px;
+	font-size: 12px;
+	line-height: 30px;
+}
+#footer_img {
+	float: right;
+	display: inline-block;
+	margin-right: 15px;	
+	height: 30px;
+}
