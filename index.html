@@ -28,7 +28,7 @@
 				<a href="mailto:vlachcj@gmail.com"><img class="social_icon" src="images/logo_mail.png"></a>
 			</div>
 		</div>
-		<div class="row" role="tabpanel">
+		<div id="menu_tabs" class="row" role="tabpanel">
 			<a href="#education" aria-controls="education" role="tab" data-toggle="tab">
 				<div class="_col col-xs-4 col-md-1 col-md-offset-3" role="presentation">education</div>
 			</a>
@@ -53,140 +53,177 @@
 	  	<!-- Tab panes -->
 	  	<div class="tab-content">
 		    <div role="tabpanel" class="tab-pane active" id="bio">
-		    	<div class="img-wrapper">
-		    	<img id="me" src="images/hiker.JPG"/>
+		    	<div class="row">
+					<div class="col-xs-4 col-md-3 col-md-offset-2">
+				    	<img id="me" src="images/hiker.JPG"/>
+					</div>
+					<div class="col-xs-8 col-md-5">
+						<div class="desc">
+							Hello! I'm Carolyn, an undergraduate at the University of Michigan. I'll be graduating this April with a BS in Computer Science, Discrete and Algorithmic Methods, and Spanish Language from the School of Literature, Science, + the Arts.<br><br>I love puzzles, apples, and music. I am the captain of UofM's Club Ultimate Frisbee team, "<a href="http://www.flywheelultimate.com">Flywheel</a>." I am also an instructor for the intro programming class at UofM, EECS 183.
+						</div>
+					</div>
 		    	</div>
-				<div class="desc">
-					Hello! I'm Carolyn, an undergraduate at the University of Michigan. I'll be graduating this April with a BS in Computer Science, Discrete and Algorithmic Methods, and Spanish Language from the School of Literature, Science, + the Arts.<br><br>I love puzzles, apples, and music. I am the captain of UofM's Club Ultimate Frisbee team, "<a href="http://www.flywheelultimate.com">Flywheel</a>." I am also an instructor for the intro programming class at UofM, EECS 183.
-				</div>
 				<div class="pad"></div>
 			</div>
 		    <div role="tabpanel" class="tab-pane" id="education">
-		    	<div class="edu">
-			    	<div class="edu_seal"><img src="images/um_seal.gif"/></div>
-			    	<div class="edu_block">
-			    		<p>
-			    			<span class="school">University of Michigan</span>
-			    			<span class="date">September 2010 - April 2015</span>
-			    		</p>
-			    		<p>
-			    			<span class="location">Ann Arbor, MI</span>
-			    			<span class="gpa"><span class="_gpa">GPA:</span> 3.8/4.0</span>
-			    		</p>
-			    		<p>
-			    			<span class="degree">B.S. Computer Science, Discrete and Algorithmic Methods, + Spanish</span>
-			    		</p>			    		
+		    	<div class="row edu">
+			    	<div class="col-xs-2 col-md-1 col-md-offset-3 edu_seal">
+			    		<img src="images/um_seal.gif"/>
 			    	</div>
+			    	<div class="col-xs-10 col-md-5 edu_block">
+			    		<div class="row">
+			    			<div class="col-xs-6 col-md-6 edu_block">
+					    		<p class="school">University of Michigan</p>
+					    		<p class="location">Ann Arbor, MI</p>
+					    	</div>
+			    			<div class="col-xs-6 col-md-6 edu_block">
+					    		<p class="date">September 2010 - April 2015</p>
+					    		<p class="gpa"><span class="_gpa">GPA:</span> 3.8/4.0</p>
+							</div>
+			    		</div>
+			    		<div class="row">
+			    			<div class="col-xs-12 col-md-12 edu_block">
+			    				<p class="degree">B.S. Computer Science, Discrete and Algorithmic Methods, + Spanish</p>
+							</div>
+						</div>	    		
+			    	</div>	    	
 			    </div>
-		    	<div class="edu">
-			    	<div class="edu_seal"><img src="images/uncuyo_seal.png"/></div>
-			    	<div class="edu_block">
-			    		<p>
-			    			<span class="school">La Universidad Nacional de Cuyo</span>
-			    			<span class="date">Fall 2012</span>
-			    		</p>
-			    		<p>
-			    			<span class="location">Mendoza, Argentina</span>
-			    		</p>
-			    		<p>
-			    			<span class="degree">Study Abroad Experience</span>
-			    		</p>		    		
+		    	<div class="row edu">
+			    	<div class="col-xs-2 col-md-1 col-md-offset-3 edu_seal">
+			    		<img src="images/uncuyo_seal.png"/>
 			    	</div>
+			    	<div class="col-xs-10 col-md-5 edu_block">
+			    		<div class="row">
+			    			<div class="col-xs-6 col-md-6 edu_block">
+			    				<p class="school">La Universidad Nacional de Cuyo</p>
+			    				<p class="location">Mendoza, Argentina</p>
+			    			</div>
+			    			<div class="col-xs-6 col-md-6 edu_block">
+			    				<p class="date">Fall 2012</p>
+			    			</div>
+			    		</div>
+			    		<div class="row">
+			    			<div class="col-xs-12 col-md-12 edu_block">
+			    				<p class="degree">Study Abroad Experience</p>
+			    			</div>		    		
+			    		</div>
+		    		</div>
 		    	</div>
 		    	<div class="pad"></div>
 		    </div>
 		    <div role="tabpanel" class="tab-pane" id="employment">
 		    	<div class="job">
-		    		<p>
-		    			<a href="http://poh.com/"><span class="company">Profitability of Hawaii</span></a>
-		    			<span class="date">June 2014 - August 2014</span>
-		    		</p>
-		    		<p class="location">
-		    			Honolulu, Hawaii
-		    		</p>
-		    		<p class="job_title">
-		    			Web Development Summer Intern
-		    		</p>
-		    		<p class="job_desc">
-						Integrated and customized document signature / signature replay functionality from the company’s existing mobile app into the company’s web app. App is written in HTML and JavaScript and supported in Chrome, Internet Explorer, and Firefox.
-		    		</p>
-		    		<p class="contact">
-		    			<span class="_contact">Contact:</span> Bill White - <a href="mailto:bwhite@poh.com">bwhite@poh.com</a>
-		    		</p>
+					<div class="row">
+		    			<div class="col-xs-8 col-md-6 col-md-offset-2">
+		    				<p><a href="http://poh.com/"><span class="company">Profitability of Hawaii</span></a></p>
+		    				<p class="location">Honolulu, Hawaii</p>
+		    				<p class="job_title">Web Development Summer Intern</p>
+		    			</div>    	
+		    			<div class="col-xs-4 col-md-2">
+		    				<span class="date">June 2014 - August 2014</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-md-8 col-md-offset-2">
+				    		<p class="job_desc">
+								Integrated and customized document signature / signature replay functionality from the company’s existing mobile app into the company’s web app. App is written in HTML and JavaScript and supported in Chrome, Internet Explorer, and Firefox.
+				    		</p>
+		    				<p class="contact">
+		    					<span class="_contact">Contact:</span> Bill White - <a href="mailto:bwhite@poh.com">bwhite@poh.com</a>
+		    				</p>
+		    			</div>
+		    		</div>
 		    	</div>
 		    	<div class="job">
-		    		<p>
-		    			<span class="company">Computer Science Engineering</span>
-		    			<span class="date">August 2013 - Present</span>
-		    		</p>
-		    		<p class="location">
-						University of Michigan College of Engineering
-		    		</p>
-		    		<p class="job_title">
-		    			Instructional Aid for EECS 183: Elementary Programming Concepts
-		    		</p>
-		    		<p class="job_desc">
-						Duties include preparing and leading a weekly hour-long discussion, holding office hours to assist students with assignments and understanding course concepts, creating projects, attending weekly staff meetings, grading examinations, and supporting course faculty.
-					</p>
-		    		<p class="contact">
-		    			<span class="_contact">Contact:</span> Dr. Mary Lou Dorf - <a href="mailto:mdorf@umich.edu">mdorf@umich.edu</a>
-		    		</p>
+					<div class="row">
+		    			<div class="col-xs-8 col-md-6 col-md-offset-2">
+		    				<span class="company">Computer Science Engineering</span>
+		    				<p class="location">University of Michigan College of Engineering</p>
+		    				<p class="job_title">Instructional Aid for EECS 183: Elementary Programming Concepts</p>
+		    			</div>    	
+		    			<div class="col-xs-4 col-md-2">
+			    			<span class="date">August 2013 - Present</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-md-8 col-md-offset-2">
+				    		<p class="job_desc">
+								Duties include preparing and leading a weekly hour-long discussion, holding office hours to assist students with assignments and understanding course concepts, creating projects, attending weekly staff meetings, grading examinations, and supporting course faculty.
+				    		</p>
+		    				<p class="contact">
+		    					<span class="_contact">Contact:</span> Dr. Mary Lou Dorf - <a href="mailto:mdorf@umich.edu">mdorf@umich.edu</a>
+		    				</p>
+		    			</div>
+		    		</div>
 		    	</div>
 		    	<div class="job">
-		    		<p>
-		    			<a href="http://www.onsp.umich.edu/educational-theatre-company"><span class="company">Educational Theatre Company</span></a>
-		    			<span class="date">March 2013 - Present</span>
-		    		</p>
-		    		<p class="location">
-		    			University of Michigan Office of New Student Programs
-		    		</p>
-		    		<p class="job_title">
-		    			Actor
-		    		</p>
-		    		<p class="job_desc">
-						Work collaboratively in small ensembles to prepare theater productions focusing on relevant issues at the University of Michigan to be performed for fellow students.
-		    		</p>
-		    		<p class="contact">
-		    			<span class="_contact">Contact:</span> Callie McKee - <a href="mailto:csmkee@umich.edu">csmkee@umich.edu</a>
-		    		</p>
-		    	</div>	
+					<div class="row">
+		    			<div class="col-xs-8 col-md-6 col-md-offset-2">
+		    				<p><a href="http://www.onsp.umich.edu/educational-theatre-company"><span class="company">Educational Theatre Company</span></a></p>
+		    				<p class="location">University of Michigan Office of New Student Programs</p>
+		    				<p class="job_title">Actor</p>
+		    			</div>    	
+		    			<div class="col-xs-4 col-md-2">
+		    				<span class="date">March 2013 - Present</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-md-8 col-md-offset-2">
+				    		<p class="job_desc">
+								Work collaboratively in small ensembles to prepare theater productions focusing on relevant issues at the University of Michigan to be performed for fellow students.
+				    		</p>
+		    				<p class="contact">
+		    					<span class="_contact">Contact:</span> Callie McKee - <a href="mailto:csmkee@umich.edu">csmkee@umich.edu</a>
+		    				</p>
+		    			</div>
+		    		</div>
+		    	</div>		    	
 		    	<div class="pad"></div>		    	
 		    </div>
 		    <div role="tabpanel" class="tab-pane" id="ultimate">
-		    	<div class="img-wrapper">
-					<img id="ult" src="images/ultimate.jpg"/>
+		    	<div class="row">
+					<div class="col-xs-4 col-md-2 col-md-offset-2">
+						<img id="ult" src="images/ultimate.jpg"/>
+					</div>
+					<div class="col-xs-8 col-md-6">
+				    	<div class="desc">
+					    	There's nothing like ultimate.<br><br>I am currently in my 5<sup>th</sup> consecutive year with "<a href="http://www.flywheelultimate.com">Flywheel</a>," the University of Michigan's Club Ultimate Frisbee team. Flywheel is a nationally competitive team that practices from September through the end of May. Since ultimate is not a varsity sport, we are the highest level of collegiate ultimate at the university. We train five to six days a week during our peak season and travel on weekends to other states, such as Georgia, Virginia, Texas, and California, to compete against other universities.<br><br>Playing a DI sport has driven me to push my physical and mental limitations in ways that I never had before. Flywheel has given me lasting relationships that can only come from complete trust and dedication to a team. Beyond my role as an athlete and teammate, I served as the treasurer for the club during my junior and senior years and am the current club president and team captain. The experience has given me exposure to all levels of involvement in a team and I am learning invaluable lessons in leadership on a daily basis.
+				    	</div>
+		    		</div>
 				</div>
-		    	<div class="desc">
-			    	There's nothing like ultimate.<br><br>I am currently in my 5<sup>th</sup> consecutive year with "<a href="http://www.flywheelultimate.com">Flywheel</a>," the University of Michigan's Club Ultimate Frisbee team. Flywheel is a nationally competitive team that practices from September through the end of May. Since ultimate is not a varsity sport, we are the highest level of collegiate ultimate at the university. We train five to six days a week during our peak season and travel on weekends to other states, such as Georgia, Virginia, Texas, and California, to compete against other universities.<br><br>Playing a DI sport has driven me to push my physical and mental limitations in ways that I never had before. Flywheel has given me lasting relationships that can only come from complete trust and dedication to a team. Beyond my role as an athlete and teammate, I served as the treasurer for the club during my junior and senior years and am the current club president and team captain. The experience has given me exposure to all levels of involvement in a team and I am learning invaluable lessons in leadership on a daily basis.
-		    	</div>
 		    	<div class="pad"></div>
 		    </div>
 		    <div role="tabpanel" class="tab-pane" id="elevator_pitch">
-		    	<div>
-		    	<span id="_elevator_pitch">Do you need a programmer?</span>
-				<br><br>
-		    	I'm a programmer looking for a home. Feel free to check out out my <a href="Vlach_Carolyn_Resume.pdf" target="_blank">résumé</a>, but here's the qualitative pitch: I'm a detail-oriented, hard-working, and avid learner with an easy going attitude. I love coding - it is a scavenger hunt, an art, a challenge, and a reward - and will dive head first into whatever task I'm assigned. Algorithms are awesome. Clean code is satisfying.
-		    	<br><br>
-		    	My internship last summer threw me into the middle of two full, unfamiliar applications in JS, HTML, and C and I thrived on the task of diligently working my way out. The work was fairly independent, but I've also been on teams of all shapes and sizes. On those teams I've filled a wide spectrum of roles, including teacher, captain, teammate, and employee.
-		    	<br><br>
-		    	I'm looking for challenging work in a comfortable and respectful environment that welcomes new learning. Does this sound good? Let's talk. If not, thanks for reading.
+		    	<div class="row">
+					<div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-4" id="_elevator_pitch">
+				    	<h4>Do you need a programmer?</h4>
+				    </div>
+		    	</div>
+				<div class="row">
+					<div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
+				    	I'm a programmer looking for a home. Feel free to check out out my <a href="Vlach_Carolyn_Resume.pdf" target="_blank">résumé</a>, but here's the qualitative pitch: I'm a detail-oriented, hard-working, and avid learner with an easy going attitude. I love coding - it is a scavenger hunt, an art, a challenge, and a reward - and will dive head first into whatever task I'm assigned. Algorithms are awesome. Clean code is satisfying.
+				    	<br><br>
+				    	My internship last summer threw me into the middle of two full, unfamiliar applications in JS, HTML, and C and I thrived on the task of diligently working my way out. The work was fairly independent, but I've also been on teams of all shapes and sizes. On those teams I've filled a wide spectrum of roles, including teacher, captain, teammate, and employee.
+				    	<br><br>
+				    	I'm looking for challenging work in a comfortable and respectful environment that welcomes new learning. Does this sound good? Let's talk. If not, thanks for reading.
+		    		</div>
 		    	</div>
 		    	<div class="pad"></div>
 		    </div>
 		    <div role="tabpanel" class="tab-pane" id="contact">
-		    	<div id="contact_wrapper">
-			    	<div class="contact_mode">
+		    	<div id="contact_wrapper" class="row">
+			    	<div class="col-xs-4 col-md-2 col-md-offset-3 contact_mode">
 			    		<h3 class="_contact_mode">knock.</h3>
 						<address>
 							314 East Summit St.<br>
 							Ann Arbor, MI 48104
 						</address>
 					</div>
-					<div class="contact_mode">
+					<div class="col-xs-4 col-md-2 contact_mode">
 						<h3 class="_contact_mode">write.</h3>
 			    		<a href="mailto:vlachcj@umich.edu">vlachcj@umich.edu</a>
 			    	</div>
-			    	<div class="contact_mode">
+			    	<div class="col-xs-4 col-md-2 contact_mode">
 			    		<h3 class="_contact_mode">call.</h3>
 						<div><span class="_cell">cell: </span>231.649.2058</div>
 					</div>
