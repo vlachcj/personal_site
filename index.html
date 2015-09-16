@@ -10,38 +10,48 @@
 		<link rel="stylesheet" href="style2.css">
 		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<script src="basic.js"></script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		  ga('create', 'UA-62753478-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
 	</head>
 	<body>
 		<div class="header">
-			<a href="#bio" aria-controls="bio" role="tab" data-toggle="tab">
-				<div id="name">
+			<div id="name">
+				<a href="#bio-tab" aria-controls="bio" role="tab" data-toggle="tab">
 					<img id="header_image" src="images/sketch.png">
 					<h1>Carolyn Vlach</h1>
 					<h4>programmer. ultimate player. sweater enthusiast.</h4>
-				</div>
-			</a>
-			<div id="social_links">
-				<a href="https://github.com/vlachcj"><img class="social_icon" src="images/github_logo.png"></a>
-				<a href="https://facebook.com/carolyn.vlach"><img class="social_icon" src="images/facebook_logo.png"></a>
-				<a href="https://twitter.com/vlachbear"><img class="social_icon" src="images/Twitter_logo_blue.png"></a>
-				<a href="mailto:vlachcj@gmail.com"><img class="social_icon" src="images/logo_mail.png"></a>
+				</a>
 			</div>
+			<h3 id="social_links">
+				<a href="https://github.com/vlachcj"><i class="fa fa-fw fa-github-square social_icon"></i></a>
+				<a href="https://facebook.com/carolyn.vlach"><i class="fa fa-fw fa-facebook-square social_icon"></i></a>
+				<a href="https://twitter.com/vlachbear"><i class="fa fa-fw fa-twitter-square social_icon"></i></a>
+				<a href="mailto:vlachcj@umich.edu"><i class="fa fa-fw fa-envelope social_icon"></i></a>
+				</h3>
+
 		</div>
 		<div id="menu_tabs" class="row" role="tabpanel">
-			<a href="#education" aria-controls="education" role="tab" data-toggle="tab">
+			<a href="#education-tab" aria-controls="education-tab" role="tab" data-toggle="tab">
 				<div class="_col col-xs-4 col-md-1 col-md-offset-3" role="presentation">education</div>
 			</a>
-			<a href="#employment" aria-controls="employment" role="tab" data-toggle="tab">
+			<a href="#employment-tab" aria-controls="employment-tab" role="tab" data-toggle="tab">
 				<div class="_col col-xs-4 col-md-1" role="presentation">employment</div>
 			</a>
-		   	<a href="#ultimate" aria-controls="ultimate" role="tab" data-toggle="tab">			
+		   	<a href="#ultimate-tab" aria-controls="ultimate" role="tab" data-toggle="tab">			
 		   		<div class="_col col-xs-4 col-md-1" role="presentation">ultimate</div>
 			</a>
-			<a href="#elevator_pitch" aria-controls="elevator_pitch" role="tab" data-toggle="tab">
+			<a href="#elevator_pitch-tab" aria-controls="elevator_pitch" role="tab" data-toggle="tab">
 				<div class="_col col-xs-4 col-md-1" role="presentation">elevator pitch</div>
 			</a>
-			<a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">
+			<a href="#contact-tab" aria-controls="contact" role="tab" data-toggle="tab">
 				<div class="_col col-xs-4 col-md-1" role="presentation">contact</div>
 			</a>
 			<a  href="Vlach_Carolyn_Resume.pdf" target="_blank">
@@ -52,7 +62,7 @@
 		  
 	  	<!-- Tab panes -->
 	  	<div class="tab-content">
-		    <div role="tabpanel" class="tab-pane active" id="bio">
+		    <div role="tabpanel" class="tab-pane active" id="bio-tab">
 		    	<div class="row">
 					<div class="col-xs-4 col-md-3 col-md-offset-2">
 				    	<img id="me" src="images/flywheel_cropped.jpg"/>
@@ -65,7 +75,7 @@
 		    	</div>
 				<div class="pad"></div>
 			</div>
-		    <div role="tabpanel" class="tab-pane" id="education">
+		    <div role="tabpanel" class="tab-pane" id="education-tab">
 		    	<div class="row edu">
 			    	<div class="col-xs-2 col-md-1 col-md-offset-3 edu_seal">
 			    		<img src="images/um_seal.gif"/>
@@ -111,7 +121,7 @@
 		    	</div>
 		    	<div class="pad"></div>
 		    </div>
-		    <div role="tabpanel" class="tab-pane" id="employment">
+		    <div role="tabpanel" class="tab-pane" id="employment-tab">
 		    	<div class="job">
 					<div class="row">
 		    			<div class="col-xs-8 col-md-6 col-md-offset-2">
@@ -181,7 +191,7 @@
 		    	</div>		    	
 		    	<div class="pad"></div>		    	
 		    </div>
-		    <div role="tabpanel" class="tab-pane" id="ultimate">
+		    <div role="tabpanel" class="tab-pane" id="ultimate-tab">
 		    	<div class="row">
 					<div class="col-xs-4 col-md-2 col-md-offset-2">
 						<img id="ult" src="images/ultimate.jpg"/>
@@ -194,7 +204,7 @@
 				</div>
 		    	<div class="pad"></div>
 		    </div>
-		    <div role="tabpanel" class="tab-pane" id="elevator_pitch">
+		    <div role="tabpanel" class="tab-pane" id="elevator_pitch-tab">
 		    	<div class="row">
 					<div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-4" id="_elevator_pitch">
 				    	<h4>Do you need a programmer?</h4>
@@ -211,13 +221,13 @@
 		    	</div>
 		    	<div class="pad"></div>
 		    </div>
-		    <div role="tabpanel" class="tab-pane" id="contact">
+		    <div role="tabpanel" class="tab-pane" id="contact-tab">
 		    	<div id="contact_wrapper" class="row">
 			    	<div class="col-xs-4 col-md-2 col-md-offset-3 contact_mode">
 			    		<h3 class="_contact_mode">knock.</h3>
 						<address>
-							314 East Summit St.<br>
-							Ann Arbor, MI 48104
+							11425 E. 26<sup>th</sup> Ave.<br>
+							Denver, CO 80238
 						</address>
 					</div>
 					<div class="col-xs-4 col-md-2 contact_mode">

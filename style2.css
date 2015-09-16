@@ -11,6 +11,7 @@ charcoal: 2f3237
 /* primary text (charcoal) */
 /* large name (dark coral) */
 /* subtitle (dark teal) */
+/* subtitleLight (light teal) */
 /* nav hover (light yellow) */
 /* nav active (dark yellow) */
 /* GENERAL */
@@ -26,6 +27,9 @@ a,
 a:hover,
 a:focus {
   color: #ff4d4d;
+}
+h4 {
+  color: #25b998;
 }
 hr {
   border-top: 1px solid #f2c22d;
@@ -45,16 +49,18 @@ hr {
 }
 #name {
   text-align: center;
-  color: #25b998;
 }
 #social_links {
+  text-align: center;
   width: 160px;
   height: 40px;
   margin: auto;
 }
 .social_icon {
-  width: 20%;
-  margin: 2px;
+  color: #25b998;
+}
+.social_icon:hover {
+  color: #ff4d4d;
 }
 /* MENU */
 ._col {

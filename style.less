@@ -20,6 +20,9 @@ charcoal: 2f3237
 /* subtitle (dark teal) */
 @supportColor1: #25b998;
 
+/* subtitleLight (light teal) */
+@supportColorLight: #c6f0dd;
+
 /* nav hover (light yellow) */
 @hoverColor: #fff599;
 
@@ -38,6 +41,9 @@ h1 {
 }
 a, a:hover, a:focus {
 	color: @nameColor;
+}
+h4 {
+	color: @supportColor1;
 }
 hr {
     border-top: 1px solid @activeColor;
@@ -58,16 +64,18 @@ hr {
 }
 #name {
 	text-align: center;
-	color: @supportColor1;
 }
 #social_links {
-	width: 160px;
-	height: 40px;
-	margin: auto;
+  text-align: center;
+  width: 160px;
+  height: 40px;
+  margin: auto;
 }
 .social_icon {
-	width: 20%;
-	margin: 2px;
+	color: @supportColor1;
+}
+.social_icon:hover {
+	color: @nameColor;
 }
 
 /* MENU */
