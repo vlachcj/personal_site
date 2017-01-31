@@ -46,8 +46,11 @@ h4 {
 	color: @supportColor1;
 }
 hr {
-    border-top: 1px solid @activeColor;
-    margin-top: 5px;
+  border-top: 1px solid @activeColor;
+  margin-top: 5px;
+}
+.img-rounded {
+  border-radius: 3px;
 }
 
 /* HEADER */
@@ -65,6 +68,9 @@ hr {
 #name {
 	text-align: center;
 }
+#name:hover {
+  opacity: .75;
+}
 #social_links {
   text-align: center;
   width: 160px;
@@ -81,24 +87,24 @@ hr {
 /* MENU */
 
 ._col {
-  	padding-bottom: 10px;
-  	padding-top: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 	padding-left: 0px;
 	padding-right: 0px;
 	text-align: center;
 }
 a ._col {
-    color: @textColor;
+  color: @textColor;
 }
 a ._col:hover, a ._col:focus {
-    color: @textColor;
+  color: @textColor;
 	text-decoration: none;
 }
 ._col:hover, ._col:focus {
-    background-color: @hoverColor;
+  background-color: @hoverColor;
 }
 ._col.active {
-    background-color: @activeColor;
+  background-color: @activeColor;
 }
 a #resume {
 	color: @nameColor;
@@ -109,6 +115,10 @@ a #resume {
 #arrow {
 	font-size: 8px;
 }
+#menu_tabs {
+  margin-left: 0px;
+  margin-right: 0px;
+}
 #nav_break {
 	width: 98%;
 }
@@ -117,8 +127,9 @@ a #resume {
 
 .tab-pane {
 	padding-bottom: 50px;
-  	width: 95%;
-  	margin: auto;}
+	width: 95%;
+	margin: auto;
+}
 .pad {
 	height: 30px;
 	display: inline-block;
